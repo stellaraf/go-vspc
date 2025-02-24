@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/deepmap/oapi-codegen/HEAD/configuration-schema.json
+package: vspc
+output: client.gen.go
+generate:
+  client: true
+  models: true
+  embedded-spec: false
+output-options:
+  client-type-name: VeeamSPC
+  nullable-type: true
+  skip-prune: true
+  initialism-overrides: true
+  response-type-suffix: Res
+  name-normalizer: ToCamelCaseWithInitialisms
+  overlay:
+    path: overlay.yml

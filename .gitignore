@@ -1,0 +1,2 @@
+spec.oapi*[.yaml,.yml,.json]
+*.env
